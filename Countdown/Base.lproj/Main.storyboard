@@ -73,6 +73,7 @@
                     <connections>
                         <outlet property="resetBtn" destination="WAn-3R-h7W" id="QBa-qR-F2I"/>
                         <outlet property="startBtn" destination="r4e-hF-Ror" id="af5-kd-Z4l"/>
+                        <outlet property="timeLbl" destination="VRX-Ze-e4u" id="eZH-kP-urO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
