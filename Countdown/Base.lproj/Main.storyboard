@@ -21,11 +21,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="kv7-OX-60v">
                                 <rect key="frame" x="38" y="412" width="338.5" height="450"/>
                                 <subviews>
-                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="PUj-9A-mPO">
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" countDownDuration="60" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="PUj-9A-mPO">
                                         <rect key="frame" x="0.0" y="0.0" width="338.5" height="216"/>
                                         <date key="date" timeIntervalSinceReferenceDate="578420207.05378497">
                                             <!--2019-05-01 16:16:47 +0000-->
                                         </date>
+                                        <connections>
+                                            <action selector="datePickerValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="4Lb-yc-hwU"/>
+                                        </connections>
                                     </datePicker>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRX-Ze-e4u">
                                         <rect key="frame" x="0.0" y="230" width="338.5" height="72"/>
@@ -71,6 +74,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="datePicker" destination="PUj-9A-mPO" id="FH1-A8-qNJ"/>
                         <outlet property="resetBtn" destination="WAn-3R-h7W" id="QBa-qR-F2I"/>
                         <outlet property="startBtn" destination="r4e-hF-Ror" id="af5-kd-Z4l"/>
                         <outlet property="timeLbl" destination="VRX-Ze-e4u" id="eZH-kP-urO"/>
